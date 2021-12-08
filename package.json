@@ -3,11 +3,12 @@
   "version": "0.0.0",
   "scripts": {
     "start": "run(){ cd $(pwd)/apps/$1; vite;}; run",
-    "build": "run(){ rm -rf dist; cd $(pwd)/apps/$1; vite build --base=./ --outDir ../../dist/$1; }; run ",
+    "build": "run(){ cd $(pwd)/apps/$1; vite build --base=./ --outDir ../../dist/$1 --emptyOutDir; }; run ",
     "gen:app": "tools/generation/generate-app.sh",
     "gen:lib": "tools/generation/generate-lib.js"
   },
   "dependencies": {
+    "axios": "^0.24.0",
     "primeicons": "^5.0.0",
     "primevue": "3.10",
     "vue": "^3.2.23"

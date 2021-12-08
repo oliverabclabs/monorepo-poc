@@ -1,11 +1,14 @@
-# Vue 3 + Typescript + Vite
+# Monorepo for Careos Frontend
 
-This template should help get you started developing with Vue 3 and Typescript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+This is the result of researching what would be a good approach for using vite vue3 and ts in a monorepo for the careos frontend. This is not at all finished but more of a POC (proof of concept).
 
-## Recommended IDE Setup
+## Get started
 
-- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+- `npm install`
 
-## Type Support For `.vue` Imports in TS
+## Commands
 
-Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can enable Volar's `.vue` type support plugin by running `Volar: Switch TS Plugin on/off` from VSCode command palette.
+- `npm run start <app-name>` runs the app locally
+- `npm run build <app-name>` builds the app
+- `npm run gen:app <app-name>` scaffolds and generates a new vue app for the monorepo
+- `npm run gen:lib` prompts you for questions to generate a lib in the libs folder
