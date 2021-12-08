@@ -2,14 +2,18 @@
   "name": "careos-frontend",
   "version": "0.0.0",
   "scripts": {
-    "start": "vite ",
-    "build": "run(){ rm -rf dist; cd $(pwd)/apps/$1; vite build --base=./ --outDir ../../dist/$1 -d; }; run ",
-    "preview": "vite preview"
+    "start": "run(){ cd $(pwd)/apps/$1; vite;}; run",
+    "build": "run(){ rm -rf dist; cd $(pwd)/apps/$1; vite build --base=./ --outDir ../../dist/$1; }; run ",
+    "gen:app": "tools/generation/generate-app.sh",
+    "gen:lib": "tools/generation/generate-lib.js"
   },
   "dependencies": {
+    "primeicons": "^5.0.0",
+    "primevue": "3.10",
     "vue": "^3.2.23"
   },
   "devDependencies": {
+    "@types/node": "^16.11.12",
     "@vitejs/plugin-vue": "^1.10.2",
     "typescript": "^4.4.4",
     "vite": "^2.7.0",
