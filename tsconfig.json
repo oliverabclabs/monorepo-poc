@@ -9,48 +9,13 @@
     "sourceMap": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
-    "lib": [
-      "esnext",
-      "dom"
-    ],
+    "lib": ["esnext", "dom"],
     "baseUrl": "./",
     "paths": {
-      "@careos/components": [
-        "libs/components"
-      ],
-      "@careos/components/*": [
-        "libs/components/*"
-      ],
-      "@careos/frida": [
-        "libs/frida"
-      ],
-      "@careos/frida/*": [
-        "libs/frida/*"
-      ],
-      "@careos/test": [
-        "libs/test"
-      ],
-      "@careos/test/*": [
-        "libs/test/*"
-      ],
-      "@careos/testy": [
-        "libs/testy"
-      ],
-      "@careos/testy/*": [
-        "libs/testy/*"
-      ],
-      "@careos/Yeah": [
-        "libs/Yeah"
-      ],
-      "@careos/Yeah/*": [
-        "libs/Yeah/*"
-      ],
-      "@careos/shared": [
-        "libs/shared"
-      ],
-      "@careos/shared/*": [
-        "libs/shared/*"
-      ]
+      "@careos/components": ["libs/components"],
+      "@careos/components/*": ["libs/components/*"],
+      "@careos/shared": ["libs/shared"],
+      "@careos/shared/*": ["libs/shared/*"]
     }
   },
   "include": [
